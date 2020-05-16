@@ -1,0 +1,1 @@
+# sealed-secrets-operator-helm
