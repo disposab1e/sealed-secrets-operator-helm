@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sealed-secrets-operator-helm
+  namespace: sealed-secrets
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: sealed-secrets-operator-helm
+  template:
+    metadata:
+      labels:
+        name: sealed-secrets-operator-helm
+    spec:
+      serviceAccountName: sealed-secrets-operator-helm
+      containers:
+        - name: sealed-secrets-operator-helm
+          image: imac.fritz.box:5000/disposab1e/sealed-secrets-operator-helm:v0.0.1
+          imagePullPolicy: Always
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "sealed-secrets-operator-helm"

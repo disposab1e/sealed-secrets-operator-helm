@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: sealed-secrets-catalog
+  namespace: olm
+spec:
+  sourceType: grpc
+  image: imac.fritz.box:5000/disposab1e/sealed-secrets-operator-helm-registry-k8s:0.0.1
+  displayName: Sealed Secret Controller Operators
+  publisher: Sealed Secrets

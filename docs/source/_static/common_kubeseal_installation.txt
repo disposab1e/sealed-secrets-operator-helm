@@ -1,0 +1,8 @@
+kubeseal
+--------
+
+Install the kubeseal command line interface by downloading the binary from Sealed Secrets `releases`_ and read about kubeseal usage on Sealed Secrets `docs`_.
+
+.. _releases: https://github.com/bitnami-labs/sealed-secrets/releases
+
+.. _docs: https://github.com/bitnami-labs/sealed-secrets#usage

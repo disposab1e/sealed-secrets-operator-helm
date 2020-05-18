@@ -1,0 +1,6 @@
+{{ if .Values.controller.create -}}
+Congratulations!
+
+Visit https://sealed-secrets-operator-helm.readthedocs.io for how to install and use the kubeseal CLI on your platform.
+
+{{- end }}
