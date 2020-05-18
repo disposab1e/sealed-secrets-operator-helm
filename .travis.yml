@@ -206,3 +206,5 @@ jobs:
       after_script:
       - build/scripts/test/ocp3/minishift-stop
       - build/scripts/test/ocp3/minishift-delete
+
+      
