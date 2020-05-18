@@ -1,0 +1,5 @@
+
+.. _configuration values: https://github.com/disposab1e/sealed-secrets-operator-helm/blob/release-0.0.1/helm-charts/sealed-secrets/README.md
+
+.. _examples: https://github.com/disposab1e/sealed-secrets-operator-helm/tree/release-0.0.1/examples
+

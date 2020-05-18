@@ -1,0 +1,6 @@
+scorecard:
+  output: text
+  plugins:
+    - basic:
+        cr-manifest:
+          - "deploy/crds/bitnami.com_sealedsecretcontrollers_crd.yaml"

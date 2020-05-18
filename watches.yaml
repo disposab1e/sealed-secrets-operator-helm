@@ -1,0 +1,5 @@
+---
+- version: v1alpha1
+  group: bitnami.com
+  kind: SealedSecretController
+  chart: /opt/helm/helm-charts/sealed-secrets

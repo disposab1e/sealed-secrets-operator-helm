@@ -1,0 +1,1 @@
+.. Note:: The operator manages a single namespace installation of Sealed Secrets. Therefore you have to install the operator and Sealed Secrets in the same namespace. For simplicity we recommend creating a namespace :guilabel:`sealed-secrets`.  
