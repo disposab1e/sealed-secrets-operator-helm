@@ -169,8 +169,6 @@ jobs:
       - build/scripts/test/ocp/sealed-secret-install
       - build/scripts/test/ocp/sealed-secret-uninstall
       - build/scripts/test/ocp/sealed-secrets-uninstall
-      - build/scripts/test/ocp/sealed-secrets-oauth-install
-      - build/scripts/test/ocp/sealed-secrets-uninstall
       - build/scripts/test/ocp/operator-manual-uninstall
       after_script:
       - build/scripts/test/ocp3/minishift-stop
@@ -199,10 +197,9 @@ jobs:
       - build/scripts/test/ocp/sealed-secrets-install
       - build/scripts/test/ocp/sealed-secret-install
       - build/scripts/test/ocp/sealed-secret-uninstall
-      - build/scripts/test/ocp/sealed-secrets-uninstall
-      - build/scripts/test/ocp/sealed-secrets-oauth-install
-      - build/scripts/test/ocp/sealed-secrets-uninstall
       - build/scripts/test/ocp/operator-manual-uninstall
       after_script:
       - build/scripts/test/ocp3/minishift-stop
       - build/scripts/test/ocp3/minishift-delete
+
+      

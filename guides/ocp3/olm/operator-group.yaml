@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: sealed-secrets-operator-helm
+  namespace: sealed-secrets
+spec:
+  targetNamespaces:
+  - sealed-secrets
