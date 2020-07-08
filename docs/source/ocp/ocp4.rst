@@ -4,9 +4,10 @@ OpenShift 4
 
 A installation guide for Operator Lifecycle Manager, 
 Sealed Secrets Operator (Helm), Sealed Secrets and 
-kubeseal command line interface in OpenShift 4.x (OCP_, CRC_).
+kubeseal command line interface in OpenShift 4.x (OCP_, OKD_, CRC_).
 
 .. _OCP: https://www.openshift.com/products/container-platform
+.. _OKD: https://www.okd.io
 .. _CRC: https://github.com/code-ready/crc
 
 .. include:: ../_static/common_clusteradmin.txt
@@ -18,6 +19,9 @@ Prerequisites
 .. image:: https://img.shields.io/badge/ocp-≥%204.2-red.svg
    :target: https://www.openshift.com/products/container-platform
    :alt: OpenShift Container Platform
+.. image:: https://img.shields.io/badge/okd-≥%204.4.0--beta5-red.svg
+   :target: https://www.okd.io
+   :alt: OKD - The Community Distribution of Kubernetes
 .. image:: https://img.shields.io/badge/crc-≥%201.4.0-red.svg
    :target: https://github.com/code-ready/crc
    :alt: CodeReady Containers

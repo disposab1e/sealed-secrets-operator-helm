@@ -1,5 +1,7 @@
-VERSION = 0.0.1
+VERSION = 0.0.2
 NAME = sealed-secrets-operator-helm
+
+RELEASE_IMAGE_0_0_2=quay.io\/disposab1e\/sealed-secrets-operator-helm@sha256:d07a66107243a0054a54aac7cd71c0a8a342c4cd45c6609ec2ab6470df16f09c
 
 REGISTRY_REL = quay.io
 REGISTRY_DEV = imac.fritz.box:5000
@@ -10,9 +12,6 @@ BUNDLE_MANIFEST_BASE_DIR = ../deploy/olm-catalog/
 BUNDLE_DIR = bundle
 BUNDLE_BUILD_BASE_DIR = _output/bundle
 GUIDES_BUILD_BASE_DIR = _output/guides
-QUICKSTARTS_BUILD_BASE_DIR = _output/quickstarts
-GUIDES_BASE_DIR = ../guides
-QUICKSTARTS_BASE_DIR = ../quickstarts
 
 
 
@@ -75,6 +74,9 @@ bundle-generate-k8s-ci:
 	cp -r ${BUNDLE_DIR}/* ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/
 	mkdir -p ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests
 	cp -r ${BUNDLE_MANIFEST_BASE_DIR}/k8s/${NAME} ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/
+	sed 's/${REGISTRY_DEV}/${REGISTRY_CI}/g' ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	rm ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	mv ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
 	sed 's/${REGISTRY_DEV}/${REGISTRY_CI}/g' ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	rm ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	mv ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/ci/k8s/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
@@ -98,6 +100,9 @@ bundle-generate-ocp-ci:
 	cp -r ${BUNDLE_DIR}/* ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/
 	mkdir -p ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests
 	cp -r ${BUNDLE_MANIFEST_BASE_DIR}/ocp/${NAME} ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/
+	sed 's/${REGISTRY_DEV}/${REGISTRY_CI}/g' ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	rm ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	mv ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
 	sed 's/${REGISTRY_DEV}/${REGISTRY_CI}/g' ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	rm ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	mv ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/ci/ocp/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
@@ -316,7 +321,10 @@ bundle-generate-k8s-release:
 	cp -r ${BUNDLE_DIR}/* ${BUNDLE_BUILD_BASE_DIR}/release/k8s/
 	mkdir -p ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests
 	cp -r ${BUNDLE_MANIFEST_BASE_DIR}/k8s/${NAME} ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/
-	sed 's/${REGISTRY_DEV}/${REGISTRY_REL}/g' ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
+	sed 's/${REGISTRY_DEV}/${REGISTRY_CI}/g' ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	rm ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	mv ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	sed 's/${REGISTRY_DEV}\/${NAMESPACE}\/${NAME}:v${VERSION}/${RELEASE_IMAGE_0_0_2}/g' ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	rm ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	mv ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 #	cp -r ${BUNDLE_BUILD_BASE_DIR}/release/k8s/manifests/${NAME} ../deploy/operatorhubs/k8s
@@ -340,7 +348,10 @@ bundle-generate-ocp-release:
 	cp -r ${BUNDLE_DIR}/* ${BUNDLE_BUILD_BASE_DIR}/release/ocp/
 	mkdir -p ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests
 	cp -r ${BUNDLE_MANIFEST_BASE_DIR}/ocp/${NAME} ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/
-	sed 's/${REGISTRY_DEV}/${REGISTRY_REL}/g' ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
+	sed 's/${REGISTRY_DEV}/${REGISTRY_CI}/g' ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	rm ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	mv ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/0.0.1/_sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/0.0.1/sealed-secrets-operator-helm.v0.0.1.clusterserviceversion.yaml
+	sed 's/${REGISTRY_DEV}\/${NAMESPACE}\/${NAME}:v${VERSION}/${RELEASE_IMAGE_0_0_2}/g' ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml > ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	rm ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 	mv ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/${VERSION}/_sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME}/${VERSION}/sealed-secrets-operator-helm.v${VERSION}.clusterserviceversion.yaml
 #	cp -r ${BUNDLE_BUILD_BASE_DIR}/release/ocp/manifests/${NAME} ../deploy/operatorhubs/ocp

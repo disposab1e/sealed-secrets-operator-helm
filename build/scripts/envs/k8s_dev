@@ -9,4 +9,6 @@ export DISTRIBUTION=k8s
 
 export MINIKUBE_VERSION=v1.10.1
 
+export MINIKUBE_DRIVER=hyperkit
+
 export MEMORY=16144

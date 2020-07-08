@@ -16,9 +16,8 @@ This chart contains the resources to use [sealed-secrets](https://github.com/bit
 | **serviceAccount.create**     | Whether to create a service account or not                                 | `true`                                      |
 | **serviceAccount.name**       | The name of the service account to create or use                           | `"sealed-secrets-controller"`               |
 | **secretName**                | The name of the TLS secret containing the key used to encrypt secrets      | `"sealed-secrets-key"`                      |
-| **image.tag**                 | The `Sealed Secrets` image tag                                             | `v0.12.3`                                   |
 | **image.pullPolicy**          | The image pull policy for the deployment                                   | `IfNotPresent`                              |
-| **image.repository**          | The repository to get the controller image from                            | `quay.io/bitnami/sealed-secrets-controller` |
+| **image.repository**          | The repository to get the controller image from                            | `quay.io/bitnami/sealed-secrets-controller@sha256:8e9a37bb2e1a6f3a8bee949e3af0e9dab0d7dca618f1a63048dc541b5d554985` |
 | **resources**                 | CPU/Memory resource requests/limits                                        | `{}`                                        |
 | **crd.create**                | `true` if crd resources should be created                                  | `true`                                      |
 | **crd.keep**                  | `true` if the sealed secret CRD should be kept when the chart is deleted   | `true`                                      |

@@ -5,6 +5,6 @@ metadata:
   namespace: openshift-marketplace
 spec:
   sourceType: grpc
-  image: imac.fritz.box:5000/disposab1e/sealed-secrets-operator-helm-registry-ocp:0.0.1
+  image: imac.fritz.box:5000/disposab1e/sealed-secrets-operator-helm-registry-ocp:0.0.2
   displayName: Sealed Secret Controller Operators
   publisher: Sealed Secrets

@@ -24,7 +24,7 @@ Operator Lifecycle Manager installation
 .. code-block:: bash
 
     kubectl delete -f guides/k8s/olm/subscription.yaml
-    kubectl delete csv sealed-secrets-operator-helm.v0.0.1 -n sealed-secrets
+    kubectl delete csv sealed-secrets-operator-helm.v0.0.2 -n sealed-secrets
     kubectl delete crd sealedsecretcontrollers.bitnami.com
     kubectl delete -f guides/k8s/olm/catalog-source.yaml
     kubectl delete -f guides/k8s/olm/operator-group.yaml
