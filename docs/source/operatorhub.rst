@@ -16,6 +16,9 @@ Prerequisites
 .. image:: https://img.shields.io/badge/ocp-≥%204.2-red.svg
    :target: https://www.openshift.com/products/container-platform
    :alt: OpenShift Container Platform
+.. image:: https://img.shields.io/badge/ocp-≥%204.2-red.svg
+   :target: https://www.okd.io/
+   :alt: OpenShift Container Platform
 .. image:: https://img.shields.io/badge/kubernetes-≥%201.11-blue.svg
    :target: https://kubernetes.io/
    :alt: Kubernetes

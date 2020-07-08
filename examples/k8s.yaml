@@ -4,8 +4,7 @@ metadata:
   name: sealed-secret-controller
 spec:
   image:
-    repository: quay.io/bitnami/sealed-secrets-controller
-    tag: v0.12.3
+    repository: quay.io/bitnami/sealed-secrets-controller@sha256:8e9a37bb2e1a6f3a8bee949e3af0e9dab0d7dca618f1a63048dc541b5d554985
     pullPolicy: IfNotPresent
 
   resources: {}

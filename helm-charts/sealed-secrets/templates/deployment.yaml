@@ -41,7 +41,7 @@ spec:
             {{- range $value := .Values.commandArgs }}
             - {{ $value | quote }}
             {{- end }}
-          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          image: {{ .Values.image.repository }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8080

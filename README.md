@@ -1,8 +1,8 @@
-[![Sealed Secrets](https://img.shields.io/badge/sealed%20secrets-1.12.3-green.svg)](https://github.com/bitnami-labs/sealed-secrets/releases/tag/v0.12.3)
-[![Latest Release](https://img.shields.io/badge/latest%20release-0.0.1-yellow.svg)](https://github.com/disposab1e/sealed-secrets-operator-helm/releases/tag/0.0.1)
+[![Sealed Secrets](https://img.shields.io/badge/sealed%20secrets-1.12.4-green.svg)](https://github.com/bitnami-labs/sealed-secrets/releases/tag/v0.12.4)
+[![Latest Release](https://img.shields.io/badge/latest%20release-0.0.2-yellow.svg)](https://github.com/disposab1e/sealed-secrets-operator-helm/releases/tag/0.0.2)
 [![Documentation Status](https://readthedocs.org/projects/sealed-secrets-operator-helm/badge/?version=latest)](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/?badge=latest)
-[![Travis-CI](https://travis-ci.org/disposab1e/sealed-secrets-operator-helm.svg?branch=release-0.0.1)](https://travis-ci.org/disposab1e/sealed-secrets-operator-helm)
-[![Github Workflows](https://github.com/disposab1e/sealed-secrets-operator-helm/workflows/continuous-integration/badge.svg?branch=release-0.0.1)](https://github.com/disposab1e/sealed-secrets-operator-helm/actions?query=workflow%3Acontinuous-integration)
+[![Travis-CI](https://travis-ci.org/disposab1e/sealed-secrets-operator-helm.svg?branch=release-0.0.2)](https://travis-ci.org/disposab1e/sealed-secrets-operator-helm)
+[![Github Workflows](https://github.com/disposab1e/sealed-secrets-operator-helm/workflows/continuous-integration/badge.svg?branch=release-0.0.2)](https://github.com/disposab1e/sealed-secrets-operator-helm/actions?query=workflow%3Acontinuous-integration)
 
 # Sealed Secrets Operator (Helm)
 
@@ -16,11 +16,11 @@ This **community maintained** Sealed Secrets Operator is based on the **communit
 
 * Easy configuration and installation
 
-Shares all [configuration values](https://github.com/disposab1e/sealed-secrets-operator-helm/blob/release-0.0.1/helm-charts/sealed-secrets/README.md) from the Sealed Secrets Helm Chart.
+Shares all [configuration values](https://github.com/disposab1e/sealed-secrets-operator-helm/blob/release-0.0.2/helm-charts/sealed-secrets/README.md) from the Sealed Secrets Helm Chart.
 
 ## Get started
 
-Quickstart with [OperatorHub's](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/operatorhub.html) or try our comprehensive guides to install this operator and [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) in [OpenShift 3](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [OpenShift 4](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html), [Minishift](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [ContainerReady Containers](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html) or [Minikube](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/k8s/minikube.html).
+Quickstart with [OperatorHub's](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/operatorhub.html) or try our comprehensive guides to install this operator and [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) in [OpenShift 3](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [OpenShift 4](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html), [OKD 4](https://argocd-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html), [Minishift](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [ContainerReady Containers](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html) or [Minikube](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/k8s/minikube.html).
 
 ## Tested Platforms
 
@@ -28,6 +28,7 @@ Quickstart with [OperatorHub's](https://sealed-secrets-operator-helm.readthedocs
 * Origin Community Distribution 3.11
 * Minishift v1.34.2
 * OpenShift Container Platform ≥ 4.2
+* OKD - The Community Distribution of Kubernetes ≥ 4.4.0 beta5
 * ContainerReady Containers 1.10.0-4.4.3
 * Minikube v1.10.1 (Kubernetes ≥ 1.14)
 

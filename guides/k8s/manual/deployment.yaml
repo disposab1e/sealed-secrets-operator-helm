@@ -16,7 +16,7 @@ spec:
       serviceAccountName: sealed-secrets-operator-helm
       containers:
         - name: sealed-secrets-operator-helm
-          image: quay.io/disposab1e/sealed-secrets-operator-helm:v0.0.1
+          image: quay.io/disposab1e/sealed-secrets-operator-helm:v0.0.2
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE

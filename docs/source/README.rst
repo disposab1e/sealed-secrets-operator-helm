@@ -2,19 +2,19 @@
 Sealed Secrets Operator (Helm)
 ******************************
 
-.. image:: https://img.shields.io/badge/sealed%20secrets-1.12.3-green.svg
-   :target: https://github.com/bitnami-labs/sealed-secrets/releases/tag/v0.12.3
+.. image:: https://img.shields.io/badge/sealed%20secrets-1.12.4-green.svg
+   :target: https://github.com/bitnami-labs/sealed-secrets/releases/tag/v0.12.4
    :alt: Sealed Secrets
-.. image:: https://img.shields.io/badge/latest%20release-0.0.1-yellow.svg
-   :target: https://github.com/disposab1e/sealed-secrets-operator-helm/releases/tag/0.0.1
+.. image:: https://img.shields.io/badge/latest%20release-0.0.2-yellow.svg
+   :target: https://github.com/disposab1e/sealed-secrets-operator-helm/releases/tag/0.0.2
    :alt: Latest Release
 .. image:: https://readthedocs.org/projects/sealed-secrets-operator-helm/badge/?version=latest
    :target: https://sealed-secrets-operator-helm.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
-.. image:: https://travis-ci.org/disposab1e/sealed-secrets-operator-helm.svg?branch=release-0.0.1
+.. image:: https://travis-ci.org/disposab1e/sealed-secrets-operator-helm.svg?branch=release-0.0.2
    :target: https://travis-ci.org/disposab1e/sealed-secrets-operator-helm
    :alt: Build with Travis CI
-.. image:: https://github.com/disposab1e/sealed-secrets-operator-helm/workflows/continuous-integration/badge.svg?branch=release-0.0.1
+.. image:: https://github.com/disposab1e/sealed-secrets-operator-helm/workflows/continuous-integration/badge.svg?branch=release-0.0.2
    :target: https://github.com/disposab1e/sealed-secrets-operator-helm/actions?query=workflow%3Acontinuous-integration
    :alt: Build with Github Workflows
 
@@ -49,7 +49,7 @@ Get started
 ===========
 
 Quickstart with `OperatorHub's`_ or try our comprehensive guides to install this 
-operator and `Sealed Secrets`_ in `OpenShift 3`_, `OpenShift 4`_, `Minishift`_, `ContainerReady Containers`_ or `Minikube`_.
+operator and `Sealed Secrets`_ in `OpenShift 3`_, `OpenShift 4`_, `OKD 4`_, `Minishift`_, `ContainerReady Containers`_ or `Minikube`_.
 
 .. _Sealed Secrets Helm Chart: https://hub.kubeapps.com/charts/stable/sealed-secrets
 .. _Sealed Secrets Operator (Helm): https://github.com/disposab1e/sealed-secrets-operator-helm
@@ -57,6 +57,7 @@ operator and `Sealed Secrets`_ in `OpenShift 3`_, `OpenShift 4`_, `Minishift`_, 
 .. _OperatorHub's: operatorhub.html
 .. _OpenShift 3: ocp/ocp3.html
 .. _OpenShift 4: ocp/ocp4.html
+.. _OKD 4: ocp/ocp4.html
 .. _Minishift: ocp/ocp3.html
 .. _ContainerReady Containers: ocp/ocp4.html
 .. _Minikube: k8s/minikube.html
@@ -68,6 +69,7 @@ Tested Platforms
 - Origin Community Distribution 3.11
 - Minishift v1.34.2
 - OpenShift Container Platform ≥ 4.2
+- OKD - The Community Distribution of Kubernetes ≥ 4.4.0 beta5
 - ContainerReady Containers 1.10.0-4.4.3
 - Minikube v1.10.1 (Kubernetes ≥ 1.14)
 
