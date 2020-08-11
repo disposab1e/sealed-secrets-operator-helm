@@ -122,7 +122,7 @@ The uninstallation process will remove the Sealed Secrets installation (CR) but 
 
 
 
-Operator Marketplace installation
+Operator Marketplace deinstallation
 ---------------------------------
 
 .. code-block:: bash
@@ -135,7 +135,7 @@ Operator Marketplace installation
     oc delete -f guides/ocp4/olm/namespace.yaml
 
 
-Manual installation
+Manual deinstallation
 -------------------
 
 .. code-block:: bash
