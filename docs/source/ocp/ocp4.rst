@@ -112,7 +112,7 @@ Cleanup
 Sealed Secrets Controller installation
 --------------------------------------
 
-The uninstallation process will remove the Sealed Secrets installation (CR) but NOT the CRD's. You have to remove them manually:
+The uninstallation process will remove the Sealed Secrets installation (CRD) but NOT the CRs. You have to remove them manually:
 
 .. code-block:: bash
     
