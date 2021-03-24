@@ -20,7 +20,7 @@ Shares all [configuration values](https://github.com/disposab1e/sealed-secrets-o
 
 ## Get started
 
-Quickstart with [OperatorHub's](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/operatorhub.html) or try our comprehensive guides to install this operator and [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) in [OpenShift 3](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [OpenShift 4](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html), [OKD 4](https://argocd-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html), [Minishift](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [ContainerReady Containers](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html) or [Minikube](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/k8s/minikube.html).
+Quickstart with [OperatorHub's](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/operatorhub.html) or try our comprehensive guides to install this operator and [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) in [OpenShift 3](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [OpenShift 4](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html), [OKD 4](https://argocd-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html), [Minishift](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp3.html), [CodeReady Containers](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/ocp/ocp4.html) or [Minikube](https://sealed-secrets-operator-helm.readthedocs.io/en/latest/k8s/minikube.html).
 
 ## Tested Platforms
 
