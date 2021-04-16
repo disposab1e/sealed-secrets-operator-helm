@@ -4,7 +4,7 @@
 [![Travis-CI](https://travis-ci.org/disposab1e/sealed-secrets-operator-helm.svg?branch=release-0.0.2)](https://travis-ci.org/disposab1e/sealed-secrets-operator-helm)
 [![Github Workflows](https://github.com/disposab1e/sealed-secrets-operator-helm/workflows/continuous-integration/badge.svg?branch=release-0.0.2)](https://github.com/disposab1e/sealed-secrets-operator-helm/actions?query=workflow%3Acontinuous-integration)
 
-# Sealed Secrets Operator (Helm)
+# [DEPRECATED] Sealed Secrets Operator (Helm)
 
 This **community maintained** Sealed Secrets Operator is based on the **community maintained** [Sealed Secrets Helm Chart](https://hub.kubeapps.com/charts/stable/sealed-secrets) and installs [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) in OpenShift Container Platform and Kubernetes.
 
